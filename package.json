@@ -1,0 +1,29 @@
+{
+  "name": "expense",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node .",
+    "build": "node ./scripts/build.js",
+    "watch": "concurrently npm:watch-*",
+    "watch-app": "cd app && npm run watch",
+    "watch-server": "cd server && npm run watch"
+  },
+  "devDependencies": {
+    "@types/express-mysql-session": "^3.0.3",
+    "@types/express-session": "^1.17.10",
+    "@types/mssql": "^9.1.4",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-mysql-session": "^3.0.0",
+    "express-session": "^1.17.3",
+    "net-snmp": "^3.9.7",
+    "node-fetch": "^3.3.2",
+    "ping": "^0.4.4"
+  }
+}
