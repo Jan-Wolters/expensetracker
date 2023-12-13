@@ -17,3 +17,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./User"), exports);
 __exportStar(require("./Income"), exports);
 __exportStar(require("./Payment"), exports);
+__exportStar(require("./TelefoonCentraal"), exports);

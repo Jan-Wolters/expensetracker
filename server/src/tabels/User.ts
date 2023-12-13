@@ -15,5 +15,14 @@ export class User extends Model {
     @Model.notNull
     @Model.type("varchar(255)")
     declare public readonly password: string;
+
+    @Model.notNull
+    @Model.type("varchar(255)")
+    declare public readonly email: string;
+
+    @Model.notNull
+    @Model.type("varchar(255)")
+    declare public readonly bank: string;
+
 }
 

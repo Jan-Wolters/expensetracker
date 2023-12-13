@@ -24,6 +24,14 @@ __decorate([
     db_1.Model.notNull,
     db_1.Model.type("varchar(255)")
 ], User.prototype, "password", void 0);
+__decorate([
+    db_1.Model.notNull,
+    db_1.Model.type("varchar(255)")
+], User.prototype, "email", void 0);
+__decorate([
+    db_1.Model.notNull,
+    db_1.Model.type("varchar(255)")
+], User.prototype, "bank", void 0);
 exports.User = User = __decorate([
     db_1.Model.register("users")
 ], User);

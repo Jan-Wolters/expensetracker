@@ -1,4 +1,4 @@
-import { Model } from "../db"
+import { Model } from "../db";
 import { User } from "./User";
 
 @Model.register("payment")

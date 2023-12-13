@@ -18,7 +18,7 @@ const express_session_1 = __importDefault(require("express-session"));
 const cors_1 = __importDefault(require("cors"));
 const path_1 = __importDefault(require("path"));
 const api_1 = require("./api");
-//import { Veeam, Telefoon, VeaamSqldb, Service } from "./services";
+const services_1 = require("./services");
 const db_1 = require("./db");
 const express_mysql_session_1 = __importDefault(require("express-mysql-session"));
 const SessionStore = (0, express_mysql_session_1.default)(express_session_1.default);
@@ -27,7 +27,7 @@ const start = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         yield db_1.DB.initialize();
         dbStarted = true;
-        //Service.start(Veeam, Telefoon, VeaamSqldb);
+        services_1.Service.start(services_1.Telefoon);
     }
     catch (e) {
         console.log(e);

@@ -1,0 +1,39 @@
+@mixin media($medias...) {
+	@each $media in $medias {
+		@if $media =="mobile" {
+			@media only screen and (max-width: 767px) {
+				@content;
+			}
+		}
+
+		@else if $media =="tablet" {
+			@media only screen and (min-width: 768px) and (max-width: 1111px) {
+				@content;
+			}
+		}
+
+		@else if $media =="desktop" {
+			@media only screen and (min-width: 1112px) and (max-width: 1599px) {
+				@content;
+			}
+		}
+
+		@else if $media =="large" {
+			@media only screen and (min-width: 1600px) {
+				@content;
+			}
+		}
+
+		@else if $media =="touch" {
+			@media (hover: none) {
+				@content;
+			}
+		}
+
+		@else if $media =="no-touch" {
+			@media (hover: hover) {
+				@content;
+			}
+		}
+	}
+}

@@ -1,0 +1,83 @@
+/* Form container */
+#inform {
+
+  position: center;
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  /* added padding */
+  border: 1px solid #ced4da;
+  /* added border */
+  border-radius: 4px;
+  /* added border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* added box-shadow */
+}
+
+/* Input fields */
+#inform input[type="text"],
+#inform input[type="password"] {
+  width: calc(100%);
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+/* Submit button */
+#inform button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+  background-color: #007bff;
+
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 200px;
+  /* Set your preferred width */
+  background-color: #fff;
+  /* Dropdown background color */
+}
+
+.custom-select::after {
+  content: '\25BC';
+  /* Unicode for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.custom-select:hover,
+.custom-select:focus {
+  border-color: #aaa;
+}

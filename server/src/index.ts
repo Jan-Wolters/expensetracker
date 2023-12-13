@@ -6,7 +6,7 @@ import cors from "cors";
 import path from "path";
 
 import { api } from "./api";
-//import { Veeam, Telefoon, VeaamSqldb, Service } from "./services";
+import { Service, Telefoon } from "./services";
 import { DB } from "./db";
 
 import MySQLStore from "express-mysql-session";
@@ -18,7 +18,7 @@ const start = async () => {
     try {
         await DB.initialize();
         dbStarted = true;
-        //Service.start(Veeam, Telefoon, VeaamSqldb);
+        Service.start(Telefoon);
     }
     catch (e) {
         console.log(e);

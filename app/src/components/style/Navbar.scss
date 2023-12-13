@@ -1,0 +1,34 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  margin-right: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+.navbar a:last-child {
+  margin-right: 0;
+}
+
+.navbar .logout {
+  cursor: pointer;
+  color: #dc3545;
+}
+
+.navbar .logout:hover {
+  color: #c82333;
+}

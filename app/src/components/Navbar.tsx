@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Auth } from "../contexts/Auth";
 import { requestLogout } from "../api";
 
-import "./styles/Navbar.scss"; // Import your CSS file here
+import "./style/Navbar.scss"; // Import your CSS file here
 
 export const Navbar = () => {
   const { isLoggedIn, setIsLoggedIn } = Auth.use();
@@ -27,7 +27,6 @@ export const Navbar = () => {
       </Link>
       {isLoggedIn ? (
         <>
-          <Link to="/company/add/">Add Companies</Link>
           <a href="/auth/logout" onClick={logout} className="logout">
             {" "}
             {/* Apply 'logout' class here */}
